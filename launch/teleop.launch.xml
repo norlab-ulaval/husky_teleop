@@ -3,7 +3,7 @@
         <param name="device_name" value="Logitech Gamepad F710"/>
     </node>
     <node pkg="teleop_twist_joy" exec="teleop_node" name="teleop_twist_joy_node">
-	    <remap from="cmd_vel" to="husky_velocity_controller/cmd_vel_unstamped" />
+	    <remap from="cmd_vel" to="joy_vel" />
 	    <param from="$(find-pkg-share husky_teleop)/config/teleop_simple.yaml"/>
     </node>
 
